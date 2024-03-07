@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="this is Mon and Son website">
+     <meta name="keywords" content="aneesajaved,Mon and son ">
+     <meta name="robots" content="index,follow">
+
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <title>Mon and Son</title>
+<style>
+     *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+     }
+     body{
+          width: 100vw;
+          height: 100vh;
+          /* display:grid;
+          justify-content: center;
+          align-items: center; */
+          /* background-color: rgb(0, 27, 77); */
+     background: linear-gradient(rgb(7, 1, 88),rgb(8, 92, 141));
+          display: grid;
+          place-items: center;
+     }
+     .pr{
+          width: 30vw;
+          aspect-ratio: 1;
+          background-color:yellow;
+          border-radius: 10px;
+          display: grid;
+          place-items: center;
+          animation: sky 10s ease-in-out infinite;
+     }
+     @keyframes sky {
+          0%{
+              background-color:yellow ;
+          } 
+          25%{
+               background-color:rgb(230, 152, 8) ; 
+          }
+          
+         50%{
+               background-color: black;
+              
+          } 
+         60%{
+
+               background-color: rgb(2, 9, 75);
+            
+              
+          } 
+          75%{
+               background-color:rgb(230, 152, 8) ;
+          } 
+          100%{
+               background-color:rgb(223, 223, 9);
+          } 
+         
+
+
+     }
+     .chld{
+          width: 10vw;
+          aspect-ratio: 1;
+          background-color: orangered;
+          border-radius: 50%;
+          position: relative;
+          overflow: hidden;
+
+     }
+     .chld::before{
+          content: "";
+          width: 10vw;
+          aspect-ratio: 1;
+          background-color: rgb(31, 29, 28);
+          border-radius: 50%;
+          position: absolute;
+          animation: mon 10s ease-in-out infinite  ;
+
+     }
+     @keyframes mon {
+          0%{
+               translate: 100%;
+               scale: 1;
+          } 
+         50%{
+               translate: 0;
+               scale: 0.9;
+               box-shadow: 0px 5px 5px 5px rgba(245, 207, 136,0.5) ;
+          } 
+          100%{
+               translate: -100%;
+               scale: 1;
+          } 
+         
+         
+
+     }
+
+</style>     
+</head>
+<body>
+     
+     <div class="pr">
+          <div class="chld"></div>
+     </div>
+</body>
+</html>
